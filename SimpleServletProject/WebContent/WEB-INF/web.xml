@@ -8,10 +8,14 @@
 	<servlet>
 		<servlet-name>xmlServlet</servlet-name>
 		<servlet-class>org.example.demo.XmlServlet</servlet-class>
+		<init-param>
+			<param-name>name</param-name>
+			<param-value>John</param-value>
+		</init-param>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>xmlServlet</servlet-name>
 		<url-pattern>/xmlServletPath</url-pattern>
 	</servlet-mapping>
-	
+
 </web-app>
