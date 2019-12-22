@@ -34,7 +34,8 @@ public class XmlServlet extends HttpServlet {
 		}
 		output.println("<h2> doGet Method </h2> <br/>" + "Hello " + userName);
 		output.println("<h2> doGet Method with Session </h2> <br/>" + "Hello " + session.getAttribute("savedUserName"));
-		output.println("<h2> doGet Method with Context </h2> <br/>" + "Hello " + context.getAttribute("savedContextUserName"));
+		output.println(
+				"<h2> doGet Method with Context </h2> <br/>" + "Hello " + context.getAttribute("savedContextUserName"));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)

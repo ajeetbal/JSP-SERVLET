@@ -18,4 +18,17 @@
 		<url-pattern>/xmlServletPath</url-pattern>
 	</servlet-mapping>
 
+<servlet>
+<servlet-name>InitJSP</servlet-name>
+<jsp-file>/InitPage.jsp</jsp-file>
+<init-param>
+			<param-name>defaultUser</param-name>
+			<param-value>default User Name</param-value>
+</init-param>
+</servlet>
+<servlet-mapping>
+		<servlet-name>InitJSP</servlet-name>
+		<url-pattern>/InitPage.jsp</url-pattern>
+</servlet-mapping>
+
 </web-app>
